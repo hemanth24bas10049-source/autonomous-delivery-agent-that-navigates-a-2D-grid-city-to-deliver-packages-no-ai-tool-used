@@ -1,5 +1,6 @@
 # autonomous-delivery-agent-that-navigates-a-2D-grid-city-to-deliver-packages-no-ai-tool-used
 An autonomous delivery agent for a 2D grid city using BFS, Uniform-Cost, A*, and local search replanning. It handles static obstacles, terrain costs, and moving obstacles with dynamic replanning. Includes Python CLI, test maps, experiments, and demo showcasing performance across static and dynamic environments.
+
 City Grid Delivery Agent
 Small project: a delivery bot in a grid-like city. It finds a path from start to goal.
 Grid cells may have:
@@ -13,6 +14,7 @@ terrain with extra cost
 moving blocks (simulate traffic)
 
 Algorithms
+
 BFS → shortest path when all roads same cost
 
 UCS → respects terrain cost differences
@@ -22,6 +24,7 @@ A* → uses heuristic, usually faster
 Hill Climb → with random restarts, tries again if stuck
 
 What it shows
+
 How different searches behave in maps
 
 Measures: total cost, nodes visited, run time
@@ -33,6 +36,8 @@ bash
 git clone https://github.com/your-username/autonomous-city-delivery-agent.git
 cd autonomous-city-delivery-agent
 pip install -r requirements.txt
+
+
 How to Run
 bash
 python city_agent.py --algo bfs
