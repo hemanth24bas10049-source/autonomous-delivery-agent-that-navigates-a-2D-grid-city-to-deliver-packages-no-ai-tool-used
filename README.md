@@ -28,32 +28,44 @@ Prerequisites
 - Python **3.8+**  
 - pip  
 
-Install deps (if file exists):  
+
+Setup  
+
+1. Clone repo
+```bash
+git clone https://github.com/your-username/autonomous-delivery-agent-that-navigates-a-2D-grid-city-to-deliver-packages-no-ai-tool-used.git
+cd autonomous-delivery-agent-that-navigates-a-2D-grid-city-to-deliver-packages-no-ai-tool-used
+```
+
+2. Make venv (optional)  
+```bash
+python -m venv venv
+# mac / linux
+source venv/bin/activate
+# windows
+venv\Scripts\activate
+```
+
+3. Install deps
+If you see `requirements.txt`:  
 ```bash
 pip install -r requirements.txt
 ```
-or just:  
+Else just:  
 ```bash
 pip install requests
 ```
 
-Installation  
-
+4. Run 
+Try different algos:  
 ```bash
-git clone https://github.com/your-username/autonomous-city-delivery-agent.git
-cd autonomous-city-delivery-agent
+python city_agent.py --algo bfs
+python city_agent.py --algo ucs
+python city_agent.py --algo astar
+python city_agent.py --algo hill
 ```
 
-(Optional) create venv:  
-```bash
-python -m venv venv
-source venv/bin/activate     # Linux/macOS
-venv\Scripts\activate        # Windows
-```
-
-
-
-## Usage  
+ Usage  
 
 Run BFS:  
 ```bash
