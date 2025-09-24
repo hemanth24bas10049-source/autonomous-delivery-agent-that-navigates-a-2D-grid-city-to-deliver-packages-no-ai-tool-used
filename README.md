@@ -33,8 +33,9 @@ Setup
 
 1. Clone repo
 ```bash
-git clone https://github.com/your-username/autonomous-delivery-agent-that-navigates-a-2D-grid-city-to-deliver-packages-no-ai-tool-used.git
+git clone https://github.com/hemanth24bas10049-source/autonomous-delivery-agent-that-navigates-a-2D-grid-city-to-deliver-packages-no-ai-tool-used.git
 cd autonomous-delivery-agent-that-navigates-a-2D-grid-city-to-deliver-packages-no-ai-tool-used
+
 ```
 
 2. Make venv (optional)  
